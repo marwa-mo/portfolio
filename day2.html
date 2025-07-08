@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marwa Mohamed - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #00d4ff;
+        }
+        
+        /* Sections */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-align: center;
+        }
+        
+        /* About section */
+        .about-content {
+            text-align: center;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            background: #00d4ff;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        /* Skills */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .skills-list li {
+            background: rgba(0, 212, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4ff;
+        }
+        
+        .project h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #000809;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(227, 212, 212, 0.1);
+            color: white;
+            font-size: 1rem;
+        }
+        
+    
+        button {
+            background: #00d4ff;
+            color: #1e3c72;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background: #0099cc;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #ccc;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marwa Mohamed</h1>
+            <p>Web Developer</p>
+        </header>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-pic">👨‍💻</div>
+                <p>Hello! I'm Marwa Mohamed, 
+                    a web develpoment ,and flutter student</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>flutter -beginner</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+        <h2>Personal Portfolio</h2>
+        <h3>1.&#128187; My First Website</h3>
+        <p>My first website using only HTML. It has images, lists, and paragraphs.</p>
+
+        <a href="#">View Project</a>
+
+        <h3>2. news website</h3>
+        <p>made website using HTML,css and JavaScript. It has images, lists,links, and paragraphs.</p>
+
+         <h3>3. online shopping-store </h3>
+        <p>made website using HTML,css and JavaScript. It connects with database and simple api.</p>
+
+         <h3>4. simple chess game</h3>
+        <p> using python.</p>
+
+    </section>
+
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Marwa Mohamed. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
